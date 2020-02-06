@@ -8,10 +8,10 @@
 #1. Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' openwrt/package/base-files/files/bin/config_generate
 
-if [ ! -d "./package/myapp" ];then
-mkdir ./package/myapp
+if [ ! -d "./openwrt/package/myapp" ];then
+mkdir ./openwrt/package/myapp
 fi
-cd ./package/myapp
+cd ./openwrt/package/myapp
 
 echo "koolproxyR"
 if [ ! -d "./koolproxyR" ];then
